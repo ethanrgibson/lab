@@ -2,6 +2,10 @@
   padding: 4px;
 }
 
+.pb-tons {
+  padding-bottom: 8em;
+}
+
 .hero-text {
   margin-top: 12rem;
   margin-left: 3rem;
@@ -11,12 +15,33 @@
   word-spacing: 1rem;
 }
 
-.moon-cards-mt {
-  margin-left: 0em;
-  margin-right: 0em;
+.moon-cards {
+  background-color: var(--bs-success);
+
 }
+
 
 .transition-text {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+@media screen AND (min-width: 767.98px) {
+  .hero-text {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .moon-cards {
+    /* margin-left: 0em;
+    margin-right: 0em; */
+    margin-bottom: 8em;
+    background-color: unset;
+    position: relative;
+    top: -8em;
+  }
+
+  .moon-cards>* {
+    position: absolute;
+  }
 }
